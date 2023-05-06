@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<style>
+
+
+
+body, html 
+{
+  height: 100%;
+  line-height: 1.8; 
+}
+
+/* Full height image header */
+.bgimg-1 
+{
+  background-position: center;
+  background-size: cover;
+  background-image: url("wall.jpg");
+  min-height: 100%;
+}
+
+.w3-bar a 
+{
+  font-size: 20px;
+   margin-right: 10px;
+   
+}
+
+
+.w3-bar .w3-button 
+{
+  padding: 10px;
+}
+
+.icons
+{
+	position:fixed;
+	top : 20%;
+	right : 0%;
+	width : 200px;
+	display : flex ;
+	flex-direction : column ;
+}
+
+.icons a
+{
+	text-decoration : none ;
+	text-transform : uppercase ;
+	padding : 10px;
+	font-size : 22px;
+	font-family : 'Oswald', sans-serif;
+	margin : 2px;
+	text-align : left;
+	border-radius : 50px 0px 0px 50px;
+	transform : translate(142px, 0px);
+	transition : all 0.5s;
+}
+
+.icons a:hover 
+{
+    transform: translate(0px, 0px);
+}
+
+.icons a i
+{
+	margin-right : 25 px ;
+	background-color : white ;
+	height : 40px;
+	width : 40px;
+	color : black;
+	text-align : center;
+	line-height : 40px ;
+	border-radius :50%;
+	transition : all 0.5s;
+}
+
+.icons a:hover  i 
+{
+	transform : rotate(360deg);
+}
+
+.icons a i.fa-facebook-f
+{
+	color : #2C80D3;
+}
+
+.icons a i.fa-youtube
+{
+	color : #fa0910;
+}
+
+.icons a i.fa-linkedin
+{
+	color : #007bb5;
+}
+
+.facebook
+{
+	background-color : #2C80D3;
+	color:white;
+}
+
+.youtube
+{
+	background-color : #fa0910;
+	color:white;
+}
+
+.linkedin
+{
+	background-color : #007bb5;
+	color:white;
+}
+
+.logo
+{
+    width: 50px;
+    cursor: pointer;
+}
+
+ footer 
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+  
+</style>
+</head>
+
+<body>
+
+	
+	<div class="w3-top">
+
+		<!-- Social media icons that each icon have link directed to it -->
+		<div class="icons">
+					<a href="https://www.facebook.com/alia.izzati2001" class = "facebook"> <i class="fab fa-facebook-f"> </i> facebook</a>
+					<a href="https://www.youtube.com/channel/UCC1egMLw83B1oeODS7SeQVQ" class = "youtube"> <i class="fab fa-youtube"> </i> youtube</a>
+					<a href="https://www.linkedin.com/in/noralia-izzati-mohd-sapavi-bbb5a3254" class = "linkedin"> <i class="fab fa-linkedin"> </i> linkedin </a>
+		</div>
+
+		<div class="w3-bar w3-white w3-card" id="myNavbar">
+			
+			<a href="home.html" class="w3-bar-item w3-button w3-wide"><img src="logo.png" class="logo"></a>
+			
+			<!-- Navigation Bar -->
+			<div class="w3-right w3-hide-small">
+			  <a href="biography.html" class="w3-bar-item w3-button">BIOGRAPHY</a>
+			  <a href="resume.html" class="w3-bar-item w3-button"></i> RESUME</a>
+			  <a href="time table.html" class="w3-bar-item w3-button"></i> TIME TABLE</a>
+			  <a href="gallery.html" class="w3-bar-item w3-button"></i> GALLERIES</a>
+			  <a href="links.html" class="w3-bar-item w3-button"></i> LINKS</a>
+			  <a href="login.html" class="w3-bar-item w3-button"></i> LOGIN</a>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Header with full-height image -->
+	<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+		<div class="w3-display-left w3-text-white" style="padding:30px">
+			<span class="w3-jumbo w3-hide-small">Hi! Welcome to my Personal Website</span><br>
+			<span class="w3-xxlarge w3-hide-large w3-hide-medium">Hi! Welcome to my Personal Website</span><br>
+		</div>  
+	</header>
+
+	<!-- Footer on each page -->
+	<footer style="color:white;">
+		  <p>&copy; 2023 NorAlia Izzati. Disclaimer & Copyright.</p>
+	</footer>
+
+</body>
+</html>

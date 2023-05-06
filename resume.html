@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<!-- @import url ('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap'); -->
+
+
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  }
+
+.logo
+{
+    width: 50px;
+    cursor: pointer;
+}
+
+.w3-bar a 
+{
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.w3-bar .w3-button 
+{
+	padding: 10px;
+}
+ 
+body
+{
+	background: lightblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	height: 100%;
+   line-height: 1.8;
+}
+
+.container
+{
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	min-height: 1000px;
+	background: #fff;
+	margin: 50px;
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+	<!-- display: flex; -->
+  <!-- flex-direction: column; -->
+}
+
+.navigation-bar 
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+<!-- .resume { -->
+  <!-- margin-top: /* height of navigation bar */; -->
+  <!-- /* add other styles as needed */ -->
+<!-- } -->
+
+.container .left_side
+{
+	position: relative;
+	background: #003147;
+	padding: 40px;
+}
+
+.profileText
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.profileText .imgBx
+{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.profileText .imgBx img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.profileText h2
+{
+	color: #fff;
+	font-size: 1.5em;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.4em;
+}
+
+.profileText h2 span
+{
+	font-size: 0.8em;
+	font-weight: 300;
+}
+
+.contactInfo
+{
+	padding-top: 40px;
+}
+
+.title
+{
+	color: #fff;
+	text-transform: uppercase;
+	fonr-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}	
+
+.contactInfo ul
+{
+	position: relative;
+}
+
+.contactInfo ul li
+{
+	position: relative;
+	list-style: none;
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+.contactInfo ul li .icon
+{
+	display: inline-block;
+	width: 30px;
+	font-size: 18px;
+	color: DodgerBlue;
+}
+
+.contactInfo ul li span
+{
+	color: #fff;
+	font-weight: 300;
+}
+
+th, td 
+{
+  border-style:solid;
+  border-color: #96D4D4;
+  color: #fff;
+  text-align: center;
+}
+  
+.contactInfo.language .percent
+{
+	position: relative;
+	width: 100px;
+	height: 6px;
+	background: #081921;
+	display: block;
+	margin-top: 5px;
+}
+
+.contactInfo.language .percent div
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: DodgerBlue ;
+}
+
+.container .right_side
+{
+	position: relative;
+	background: #fff;
+	padding: 40px;
+}
+
+.about
+{
+	margin-bottom: 40px;
+}
+
+.about:last-child
+{
+	margin-bottom: 0;
+} 
+
+.title2
+{
+	color: #003147;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+.p
+{
+	color: #333;
+}
+
+.about .box
+{
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0;
+}
+
+.about .box .year_company
+{
+	min-width: 180px;
+}
+
+.about .box .year_company h5
+{
+	text-transform: uppercase;
+	color: #848c90;
+	font-weight: 600;
+}
+
+.about .box .text h4
+{
+	text-transform: uppercase;
+	color: #5F9EA0;
+	font-size: 16px;
+}
+
+.skills .box
+{
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 180px 1fr;
+	justify-content: center;
+	align-items: center;
+}
+
+.skills .box h4
+{
+	text-transform: uppercase;
+	color: #848c99;
+	font-weight: 500;
+}
+
+.skills .box .percent
+{
+	position: relative;
+	width: 100%;
+	height: 10px;
+	background: #f0f0f0;
+}
+
+.skills .box .percent div
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: DodgerBlue ;
+}
+
+.interest ul 
+{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+}
+
+.interest ul li
+{
+	list-style: none;
+	color: #333;
+	font-weight: 500;
+	margin: 10px 0;
+}
+
+.interest ul li .fas
+{
+	color: DodgerBlue;
+	font-size: 18px;
+	width: 25px;
+}
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  
+}
+
+.btn-container {
+  text-align: center;
+}
+
+/* Darker background on mouse-over */
+.btn:hover 
+{
+	background-color: RoyalBlue;
+}
+
+footer 
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+ 
+</style>
+
+
+</head>
+<body>
+
+		<!-- Navigation Bar -->
+		<div class="w3-top">
+
+			<div class="w3-bar w3-white w3-card" id="myNavbar">
+
+				<a href="home.html" class="w3-bar-item w3-button w3-wide"><img src="logo.png" class="logo"></a>
+				
+				<div class="w3-right w3-hide-small">
+				  <a href="biography.html" class="w3-bar-item w3-button">BIOGRAPHY</a>
+				  <a href="resume.html" class="w3-bar-item w3-button"></i> RESUME</a>
+				  <a href="time table.html" class="w3-bar-item w3-button"></i> TIME TABLE</a>
+				  <a href="gallery.html" class="w3-bar-item w3-button"></i> GALLERIES</a>
+				  <a href="links.html" class="w3-bar-item w3-button"></i> LINKS</a>
+				  <a href="login.html" class="w3-bar-item w3-button"></i> LOGIN</a>
+	
+				</div>
+				
+
+			</div>
+		</div>
+
+	<div class="container">
+		
+	
+		<!-- All content in the left side of pages -->
+		<div class="left_side">
+			<div class="profileText">
+				<div class="imgBx">
+					<img src="alia.png">
+				</div>
+					<h2>NorAlia Izzati Binti Mohd Sapavi<br><span>2021481072</span></h2>
+			</div>
+			
+			<div class="contactInfo">
+				<h3 class="title">Contact Info</h3>
+				<ul>
+					<li>
+						<span class="icon"><i class="fa fa-phone"aria-hidden="true"></i></span>
+						<span class="text">+0185735778</span>
+					</li>
+					
+					<li>
+						<span class="icon"><i class="fa fa-envelope"aria-hidden="true"></i></span>
+						<span class="text">2021481072@student.uitm.edu.my</span>
+					</li>
+					
+					<li>
+						<span class="icon"><i class="fa fa-map-marker"aria-hidden="true"></i></span>
+						<span class="text">Kuala Kangsar, Perak</span>
+					</li>
+					
+					<li>
+						<span class="icon"><i class="fa fa-globe"aria-hidden="true"></i></span>
+						<span class="text">www.mywebsite.com</span>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- use table to insert detail about my education -->
+			<div class="contactInfo education">
+				<h3 class="title">Education</h3>
+				<table style="width:100%">
+				  <tr>
+					<th>Duration</th>
+					<th>Studying</th> 
+				  </tr>
+				  
+				  <tr>
+					<td>2019-2020</td>
+					<td>Science Computer Module 2 in Matriculation</td>
+				  </tr>
+				  
+				  <tr>
+					<td>2021-2024</td>
+					<td>Bachelor of Science in Computer Science,Netcentric Computing UiTM Shah Alam</td>
+				  </tr>
+				  
+				  <tr>
+					<td>2021-present</td>
+					<td>Relevant coursework : Data Structures and Algorithms, Operating Systems, Computer Networks, Software Engineering, Database Systems</td>
+				  </tr>
+				</table>
+			</div>
+			
+			<div class="contactInfo language">
+				<h3 class="title">Languages</h3>
+				<ul>
+					<li>
+						<span class="text">Malay</span>
+						<span class="percent">
+							<div style="width: 90%;"></div>
+						</span>
+					</li>
+					
+					<li>
+						<span class="text">English</span>
+						<span class="percent">
+							<div style="width: 70%;"></div>
+						</span>
+					</li>
+					
+					<li>
+						<span class="text">Arabic</span>
+						<span class="percent">
+							<div style="width: 50%;"></div>
+						</span>
+					</li>			
+				</ul>
+			</div>	
+		</div>
+		
+		<!-- All content in the right side of pages -->
+		<div class="right_side">
+			<div class="about">
+				<h2 class="title2">Objective</h2>
+					<p>To secure a challenging position in the IT industry where I can utilize my skills and knowledge to contribute to the success of the company.<br><br>
+					Experienced information technology professional in search of a position that allows me to apply my management and technical skills to achieve corporate goals, 
+					develop improved processes for managing IT requests and accomplish projects in a more efficient way</p>
+			</div>
+			<div class="about">
+				<h2 class="title2">Experience</h2>
+				<div class="box">
+					<div class="year_company">
+						<h5>2025 - Present</h5>
+						<h5>2Gig Technologies</h5>
+					</div>
+					
+					<div class="text">
+						<h4>Web Developer</h4>
+						<p> Developed and maintained software applications using Java and Python. </p>
+					</div>
+				</div>
+				
+				<div class="box">
+					<div class="year_company">
+						<h5>2022 - 2023</h5>
+						<h5>Omegazero Tech</h5>
+					</div>
+					
+					<div class="text">
+						<h4>Computer programmer</h4>
+						<p>Implemented database management systems using SQL and Oracle. </p>
+					</div>
+				</div>
+				
+				<div class="box">
+					<div class="year_company">
+						<h5>2020-2021</h5>
+						<h5>Mindtree</h5>
+					</div>
+					
+					<div class="text">
+						<h4>Business Analyst</h4>
+						<p> Collaborated with cross-functional teams to gather requirements and develop project plans </p>
+					</div>
+				</div>	
+			</div>
+			
+			<div class="about skills">
+				<h2 class="title2">Professional Skills</h2>
+				<div class="box">
+					<h4>HTML</h4>
+					<div class="percent">
+						<div style="width:77%"></div>
+					</div>
+				</div>
+				
+				<div class="box">
+					<h4>Java</h4>
+					<div class="percent">
+						<div style="width:80%"></div>
+					</div>
+				</div>
+				
+				<div class="box">
+					<h4>C++</h4>
+					<div class="percent">
+						<div style="width:90%"></div>
+					</div>
+				</div>
+				
+				<div class="box">
+					<h4>Photoshop</h4>
+					<div class="percent">
+						<div style="width:87%"></div>
+					</div>
+				</div>
+				
+				<div class="box">
+					<h4>Adobe Premiere Pro </h4>
+					<div class="percent">
+						<div style="width:75%"></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="about">
+				<h2 class="title2">Certification </h2>
+					<ol>
+					  <li>Oracle Certified Professional, Java SE 11 Developer</li>
+					  <li>AWS Certified Cloud Practitioner</li>
+					  <li>Cisco Career Certifications</li>
+					</ol>  
+			</div>
+			
+			<div class="about interest">
+				<h2 class="title2">Interest</h2>
+				<ul>
+					<li><i class="fas fa-gamepad" aria-hidden="true"></i>Gaming</li>
+					<li><i class="fas fa-book" aria-hidden="true"></i>Reading</li>
+					<li><i class="fas fa-utensils" aria-hidden="true"></i>Cooking</li>
+					<li><i class="fas fa-plane" aria-hidden="true"></i>Travelling</li>
+				</ul>
+			</div>
+		
+		<!-- Download button for my resume -->
+		<div class="btn-container">
+		<button class="btn"><i class="fa fa-download"></i> Download Resume</button>	
+		<br> 
+		<p> Format : PDF Files </p>
+		</div>
+		
+		
+		</div>
+		
+		<!-- Footer on page -->
+		<footer style="color:black;">
+			<p>&copy; 2023 NorAlia Izzati. Disclaimer & Copyright.</p>
+		</footer>
+			
+	</div>
+
+</body>
+</html>
+	
+  

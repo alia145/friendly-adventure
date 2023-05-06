@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Table</title>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<style>
+  
+	body, html {
+  height: 100%;
+  line-height: 1.8;
+  
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("wall.jpg");
+  min-height: 100%;
+}
+
+.w3-bar a {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+
+.w3-bar .w3-button {
+  padding: 10px;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+		
+		table {
+		  font-family: arial, sans-serif;
+		  border-collapse: collapse;
+		  width: 40%;
+			margin: 0 auto;
+			 
+			 
+			}
+
+		td, th {
+		  border: 2px solid #696969;
+		  text-align: center;
+		  padding: 8px;
+		  
+		}
+
+		tr:nth-child(even) {
+		  background-color: #dddddd;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		  }
+  
+
+  
+  
+		.popup {
+			display: none;
+			position: fixed;
+			z-index: 1;
+			padding-top: 100px;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgba(0,0,0,0.4);
+		}
+		
+		.popup-content {
+			background-color: #fefefe;
+			margin: auto;
+			padding: 20px;
+			border: 1px solid #888;
+			width: 80%;
+			max-width: 600px;
+			text-align: center;
+			border-radius: 5px;
+		}
+		
+		.popup-close {
+			color: #aaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+			margin-top: -10px;
+			margin-right: -10px;
+			cursor: pointer;
+		}
+		
+		.popup-close:hover,
+		.popup-close:focus {
+			color: black;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		
+		.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  
+}
+
+.btn-container {
+  text-align: center;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+		
+	</style>
+</head>
+<body style="background-color:Azure;">
+
+<!-- Navigation Bar -->
+<div class="w3-top">
+
+
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+	
+	<a href="home.html" class="w3-bar-item w3-button w3-wide"><img src="logo.png" class="logo"></a>
+	
+    <div class="w3-right w3-hide-small">
+      <a href="biography.html" class="w3-bar-item w3-button">BIOGRAPHY</a>
+      <a href="resume.html" class="w3-bar-item w3-button"></i> RESUME</a>
+      <a href="time table.html" class="w3-bar-item w3-button"></i> TIME TABLE</a>
+      <a href="gallery.html" class="w3-bar-item w3-button"></i> GALLERIES</a>
+      <a href="links.html" class="w3-bar-item w3-button"></i> LINKS</a>
+	  <a href="login.html" class="w3-bar-item w3-button"></i> LOGIN</a>
+    </div>
+
+    
+  </div>
+</div>
+
+	<br>
+	<h1>My Time Table</h1>
+	
+	<table>
+		<tr>
+			<th>Course Code</th>
+			<th>Credit Unit</th>
+		</tr>
+		
+		<!-- using popup function,when we click the course code it will popup detail of the course code -->
+		<tr>
+			<td><a href="#" onclick="document.getElementById('popup1').style.display='block'">ITT569</a> </td>
+			<td>3.00</td>
+		</tr>
+		
+		<tr>
+			<td><a href="#" onclick="document.getElementById('popup2').style.display='block'">CSC574</a> </td>
+			<td>3.00</td>
+		</tr>
+		
+		<tr>
+			<td><a href="#" onclick="document.getElementById('popup3').style.display='block'">ELC550</a> </td>
+			<td>2.00</td>
+		</tr>
+		
+		<tr>
+			<td><a href="#" onclick="document.getElementById('popup4').style.display='block'">ITT557</a> </td>
+			<td>3.00</td>
+		</tr>
+		
+		<tr>
+			<td><a href="#" onclick="document.getElementById('popup5').style.display='block'">ITT588</a> </td>
+			<td>3.00</td>
+		</tr>
+		
+		<tr>
+			<td><a href="#" onclick="document.getElementById('popup6').style.display='block'">ITS462</a> </td>
+			<td>3.00</td>
+		</tr>
+		
+		<tr>
+			<td><a href="#" onclick="document.getElementById('popup7').style.display='block'">TAC451</a> </td>
+			<td>2.00</td>
+		</tr>
+		
+		
+		
+		
+	</table>
+	
+	<!-- This popup will appear when click the course code -->
+	<div id="popup1" class="popup">
+		<div class="popup-content">
+			<span class="popup-close" onclick="document.getElementById('popup1').style.display='none'">&times;</span>
+			<h2>ITT569</h2>
+			<p>Time : 08:00 - 10:00 (Monday)</p>
+			<p>Time : 08:00 - 10:00 (Thursday)</p>
+			<p>Course Name : Internet Of Things (IOT) </p>
+			<p>Lecturer Name : Shapina Binti Abdullah </p>
+			<p>Group : CS2514A </p>
+		</div>
+	</div>
+
+	<div id="popup2" class="popup">
+		<div class="popup-content">
+			<span class="popup-close" onclick="document.getElementById('popup2').style.display='none'">&times;</span>
+			<h2>CSC574</h2>
+			<p>Time : 16:00 - 18:00 (Tuesday)</p>
+			<p>Time : 08:00 - 10:00 (Wednesday)</p>
+			<p>Course Name : Dynamic Web Application Development </p>
+			<p>Lecturer Name : Nur Aina Khadijah Binti Adnan </p>
+			<p>Group : CS2514A </p>
+		</div>
+	</div>
+	
+	<div id="popup3" class="popup">
+		<div class="popup-content">
+			<span class="popup-close" onclick="document.getElementById('popup3').style.display='none'">&times;</span>
+			<h2>ELC550</h2>
+			<p>Time : 10:00 - 12:00 (Monday)</p>
+			<p>Course Name : English For Academic Writing </p>
+			<p>Lecturer Name : Siti Fauzana Binti Zakaria </p>
+			<p>Group : CS2514A </p>
+		</div>
+	</div>
+	
+	<div id="popup4" class="popup">
+		<div class="popup-content">
+			<span class="popup-close" onclick="document.getElementById('popup4').style.display='none'">&times;</span>
+			<h2>ITT557</h2>
+			<p>Time : 14:00 - 16:00 (Thursday)</p>
+			<p>Time : 10:00 - 12:00 (Friday)</p>
+			<p>Course Name : Web Application Security </p>
+			<p>Lecturer Name : Mohsen Bin Mohamas Hata </p>
+			<p>Group : CS2514A </p>
+		</div>
+	</div>
+	
+	<div id="popup5" class="popup">
+		<div class="popup-content">
+			<span class="popup-close" onclick="document.getElementById('popup5').style.display='none'">&times;</span>
+			<h2>ITT588</h2>
+			<p>Time : 10:00 - 12:00 (Tuesday)</p>
+			<p>Time : 14:00 - 16:00 (Wednesday)</p>
+			<p>Course Name : Front-End Technology </p>
+			<p>Lecturer Name : Kamarul Ariffin Bin Abdul Basit </p>
+			<p>Group : CS2514A </p>
+		</div>
+	</div>
+	
+	<div id="popup6" class="popup">
+		<div class="popup-content">
+			<span class="popup-close" onclick="document.getElementById('popup6').style.display='none'">&times;</span>
+			<h2>ITS462</h2>
+			<p>Time : 16:00 - 18:00 (Monday)</p>
+			<p>Time : 08:00 - 10:00 (Tuesday)</p>
+			<p>Course Name : Fundamentals Of Artificial Intelligence </p>
+			<p>Lecturer Name : Farah Aqilah Binti Bohani </p>
+			<p>Group : CS2514A </p>
+		</div>
+	</div>
+	
+	<div id="popup7" class="popup">
+		<div class="popup-content">
+			<span class="popup-close" onclick="document.getElementById('popup7').style.display='none'">&times;</span>
+			<h2>TAC451</h2>
+			<p>Time : 14:00 - 16:00 (Tuesdayday)</p>
+			<p>Course Name : Introductory Arabic (Level II) </p>
+			<p>Lecturer Name : Ibrahim Youssef Abdelhamid </p>
+			<p>Group : CST2AD </p>
+		</div>
+	</div>
+	
+	<br>
+	
+	<div class="btn-container">
+		<button class="btn"><i class="fa fa-download"></i> Download Time Table</button>
+<br> 
+		<p> Format : PDF Files </p>		
+		</div>
+		
+		<footer style="color:black;">
+      <p>&copy; 2023 NorAlia Izzati. Disclaimer & Copyright.</p>
+    </footer>
+	
+
+</body>
+</html>
+
+
+
+
+
+

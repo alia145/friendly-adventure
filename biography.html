@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Biography</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body,h3
+{
+	font-family: "Lato", sans-serif;
+}
+
+<!-- sets the height of the HTML and body elements to 100% of the viewport height -->
+body, html 
+{
+	height: 100%;
+	color: #777;
+	line-height: 1.8;
+}
+
+.logo
+{
+	width: 50px;
+    cursor: pointer;
+}
+
+
+.w3-bar a 
+{
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.w3-bar .w3-button 
+{
+	padding: 10px;
+}
+
+
+/* Create a Parallax Effect */
+.bgimg-1 
+{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 
+{
+	background-image: url('BIO.jpg');
+	min-height: 100%;
+}
+
+.w3-wide 
+{
+	letter-spacing: 10px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) 
+{
+	.bgimg-1 
+	{
+		background-attachment: scroll;
+		min-height: 300px;
+    }
+}
+
+footer 
+{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+	<!-- Navigation Bar -->
+	<div class="w3-top">
+
+		<div class="w3-bar w3-white w3-card" id="myNavbar">
+			<a href="home.html" class="w3-bar-item w3-button w3-wide"><img src="logo.png" class="logo"></a>
+
+			<div class="w3-right w3-hide-small">
+			  <a href="biography.html" class="w3-bar-item w3-button">BIOGRAPHY</a>
+			  <a href="resume.html" class="w3-bar-item w3-button"></i> RESUME</a>
+			  <a href="time table.html" class="w3-bar-item w3-button"></i> TIME TABLE</a>
+			  <a href="gallery.html" class="w3-bar-item w3-button"></i> GALLERIES</a>
+			  <a href="links.html" class="w3-bar-item w3-button"></i> LINKS</a>
+			  <a href="login.html" class="w3-bar-item w3-button"></i> LOGIN</a>
+			</div>
+
+
+		</div>
+	</div>
+
+	<!-- First Parallax Image with Logo Text -->
+	<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+		<div class="w3-display-middle" style="white-space:nowrap;">
+			<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">BIOGRAPHY</span>
+	    </div>
+	</div>
+
+	<!-- Container About Me -->
+	<div class="w3-content w3-container w3-padding-60" id="about">
+		<h3 class="w3-center">ABOUT ME</h3>
+			<p class="w3-center"><em>I love reading and surfing internet</em></p>
+			<p>Hi! My name is NorAlia Izzati Binti Mohd Sapavi and I am 22 years old. I was raised in Kuala Kangsar, Perak and still living in it till now. 
+			   I pursued my studies in netcentric computing and am presently enrolled at UiTM Shah Alam in Selangor. I am now in my fourth semester, with two more semesters and one semester of internship remaining.
+			   The website that I developed was created as part of an ongoing table for the topic I studied, CSC574 Dyamic Web Application Development.
+			   I hope that by using what I've learned, I'll be able to fulfil my goals and be valuable to both of my parents.</p>
+	
+		<div class="w3-row">
+			<div class="w3-col m6 w3-center w3-padding-large">
+				<img src="PIC.jpg" class="w3-round w3-image " alt="Photo of Me" width="500" height="333">
+			</div>
+
+		<div class="w3-col m6 w3-hide-small w3-padding-large">
+			<p> I've always been an avid reader and a passionate internet user.Reading has always been a source of learning and enjoyment for me, 
+			    and I like experimenting with numerous book genres, including nonfiction, fiction, novels, comic books, and many more.
+			    I find it tremendously enlightening to lose yourself in the world of literature, to become immersed in new concepts, and to interact with many viewpoints.</p>
+			  
+			<p> I also enjoy exploring the vastness of the internet, which is like a bottomless sea of knowledge and enjoyment.
+				I am always astounded by the sheer range and depth of knowledge that is at my disposal, whether I am researching a subject for business, 
+				perusing social media for leisure, watching a movie or play, or even gaining something fresh through online courses. </p>
+	   
+			<p> Last but not leats, ENJOY ;) </p>
+	    </div>
+	    </div>
+	  
+		<!-- Footer on each page -->
+		<footer style="color:black;">
+			  <p>&copy; 2023 NorAlia Izzati. Disclaimer & Copyright.</p>
+		</footer>
+	  
+	</div>
+
+
+
+</body>
+</html>

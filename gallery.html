@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Galleries</title>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo
+{
+    width: 50px;
+    cursor: pointer;
+}
+
+body, html 
+{
+	height: 100%;
+	line-height: 1.8;
+  
+}
+
+.w3-bar a 
+{
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.w3-bar .w3-button 
+{
+	padding: 10px;
+}
+
+.container
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 40px 20px 0 20px;
+}
+
+.container .heading
+{
+  width: 50%;
+  padding-bottom: 50px;
+}
+.container .heading h3{
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222;
+}
+
+.container .heading h3 span
+{
+  font-weight: 100;
+}
+
+.container .box
+{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.container .box .dream
+{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.container .box .dream img
+{
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.container .btn
+{
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px ;
+  border-radius: 5px;
+}
+
+.container .btn a
+{
+ color: #fff;
+ font-size: 1.2em;
+ text-decoration: none;
+ font-weight: bolder;
+ letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 769px)
+{
+    .container .box
+	{
+		flex-direction: column;
+    }
+
+	.container .box .dream
+	{
+	  width: 100%;
+	}
+
+	.dream audio 
+	{
+	  margin-right: 50px;
+	}
+}
+
+@media only screen and (max-width: 643px)
+{
+	.container .heading
+	{
+	  width: 100%;
+	}
+	.container .heading h3
+	{
+	  font-size: 1em;
+	}
+}
+
+footer 
+{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+</style>
+
+
+	<!-- Navigation Bar -->
+	<div class="w3-top">
+
+		<div class="w3-bar w3-white w3-card" id="myNavbar">
+
+			<a href="home.html" class="w3-bar-item w3-button w3-wide"><img src="logo.png" class="logo"></a>
+			
+			<div class="w3-right w3-hide-small">
+			  <a href="biography.html" class="w3-bar-item w3-button">BIOGRAPHY</a>
+			  <a href="resume.html" class="w3-bar-item w3-button"></i> RESUME</a>
+			  <a href="time table.html" class="w3-bar-item w3-button"></i> TIME TABLE</a>
+			  <a href="gallery.html" class="w3-bar-item w3-button"></i> GALLERIES</a>
+			  <a href="links.html" class="w3-bar-item w3-button"></i> LINKS</a>
+			  <a href="login.html" class="w3-bar-item w3-button"></i> LOGIN</a>
+		    </div>
+
+
+		</div>
+	</div>
+
+<body style="background-color:Thistle;">
+	<div class="container">
+		<div class="heading">
+		<br>
+			<h3>Photo <span>Gallery</span></h3>
+		</div>
+		
+		<div class="heading3">
+			<h2>My Pictures</h2>
+		</div>
+		
+		<br>
+		
+		<!-- collection of my pictures using different layout -->
+		<div class="box">
+		  
+			<div class="dream">
+				<img src="1.jpg">
+				<img src="2.jpg">
+				<img src="3.jpg">
+			    <img src="4.jpg">
+				<img src="5.jpg">
+		    </div>
+
+			<div class="dream">
+				<img src="6.jpg">
+				<img src="7.jpg">
+				<img src="8.jpg">
+				<img src="9.jpg">
+				<img src="10.jpg">	
+			 </div>
+
+			<div class="dream">
+				<img src="11.jpg">
+			    <img src="12.jpg">
+			    <img src="13.jpg">
+			    <img src="14.jpg">
+		  </div>
+		  
+		</div>
+		
+		<br>
+		
+		<!-- collection of my videos using different layout -->
+		<div class="heading3">
+			<h2>My Videos</h2>
+		</div>
+		
+		<div class="box">
+
+			<div class="dream">
+				<video width="420" height="340" controls>
+					<source src="kucing.mp4" type="video/mp4">
+				</video>
+			</div>
+			
+			<div class="dream">
+				<video width="420" height="340" controls>
+					<source src="FROZEN - Let It Go.mp4" type="video/mp4">
+				</video>
+			</div>
+			
+			<div class="dream">
+				<video width="420" height="340" controls>
+					<source src="kolej.mp4" type="video/mp4">
+				</video>
+			</div>
+	    </div>
+	  
+	    <div class="box">
+			
+			<div class="dream">
+				<video width="420" height="340" controls>
+					<source src="SpongeBob SquarePants.mp4" type="video/mp4">
+				</video>
+			</div>
+				
+			<div class="dream">
+				<video width="420" height="340" controls>
+					<source src="Doraemon opening song.mp4" type="video/mp4">
+				</video>
+			</div>
+
+	    </div>
+	  
+	  <br>
+	  
+		<!-- collection of my music using different layout -->
+	    <div class="heading3">
+			<h2>My Music</h2>
+		</div>
+		
+		<br>
+
+		<div class="box">
+
+			<div class="dream">
+			
+			<p style = "color:RebeccaPurple;">Maher Zain - Rahmatun Lil’Alameen </p>
+				<audio controls>
+					<source src="Maher Zain - Rahmatun LilAlameen.ogg" type="audio/ogg">
+					<source src="Maher Zain - Rahmatun LilAlameen.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			
+			<div class="dream">
+			<p style = "color:RebeccaPurple;">Haqiem Rusli - Tergantung Sepi </p>
+				<audio controls>
+					<source src="Haqiem Rusli - Tergantung Sepi.ogg" type="audio/ogg">
+					<source src="Haqiem Rusli - Tergantung Sepi.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			
+			<div class="dream">
+				<p style = "color:RebeccaPurple;">Into the Unknown </p>
+					<audio controls>
+						<source src="Into the Unknown.ogg" type="audio/ogg">
+						<source src="Into the Unknown.mp3" type="audio/mpeg">
+					</audio>
+			</div>
+	    </div>
+	  
+	    <br>
+	  
+	    <div class="box">
+			
+			<div class="dream">
+				<p style = "color:RebeccaPurple;">Harris J - I Promise </p>
+					<audio controls>
+						<source src="Harris J - I Promise.ogg" type="audio/ogg">
+						<source src="Harris J - I Promise.mp3" type="audio/mpeg">
+					</audio>
+			</div>
+			
+			<div class="dream">
+				<p style = "color:RebeccaPurple;">Justin Bieber - Ghost </p>
+					<audio controls>
+						<source src="Justin Bieber - Ghost.ogg" type="audio/ogg">
+						<source src="Justin Bieber - Ghost.mp3" type="audio/mpeg">
+					</audio>
+			</div>
+	    </div>
+		
+    </div>
+  <br>
+  
+	<footer style="color:black;">
+		<p>&copy; 2023 NorAlia Izzati. Disclaimer & Copyright.</p>
+    </footer>
+
+</body>
+</html>

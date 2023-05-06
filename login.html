@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Login </title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/style.css">
+
+		<style>
+		
+/* Google Fonts - Poppins */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  
+}
+
+.w3-bar a {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+
+.w3-bar .w3-button {
+  padding: 10px;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cc99ff;
+    column-gap: 30px;
+}
+.form{
+    position: absolute;
+    max-width: 430px;
+    width: 430px;
+    padding: 30px;
+    border-radius: 6px;
+    background: #FFF;
+}
+
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+}
+
+form{
+    margin-top: 30px;
+}
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.field input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid#CACACA;
+}
+.field input:focus{
+    border-bottom-width: 2px;
+}
+.eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+.field button{
+	align-items: center;
+    color: #fff;
+    background-color: #0171d3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field button:hover{
+    background-color: #016dcb;
+}
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span,
+.form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+.form a{
+    color: #0171d3;
+    text-decoration: none;
+}
+.form-content a:hover{
+    text-decoration: underline;
+}
+
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+}
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+   .form-content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  
+  input-box[type="checkbox"] {
+  transform: scale(0.8);
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select 
+{
+	padding: 5px;
+	width: 100%;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"]
+{
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: px 2px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover 
+{
+	background-color: #3e8e41;
+}
+
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+		
+		</style>
+                        
+    </head>
+    <body>
+	
+	<!-- Navigation Bar -->
+	<div class="w3-top">
+
+		<div class="w3-bar w3-white w3-card" id="myNavbar">
+			<a href="home.html" class="w3-bar-item w3-button w3-wide"><img src="logo.png" class="logo"></a>
+
+			<div class="w3-right w3-hide-small">
+			  <a href="biography.html" class="w3-bar-item w3-button">BIOGRAPHY</a>
+			  <a href="resume.html" class="w3-bar-item w3-button"></i> RESUME</a>
+			  <a href="time table.html" class="w3-bar-item w3-button"></i> TIME TABLE</a>
+			  <a href="gallery.html" class="w3-bar-item w3-button"></i> GALLERIES</a>
+			  <a href="links.html" class="w3-bar-item w3-button"></i> LINKS</a>
+			  <a href="login.html" class="w3-bar-item w3-button"></i> LOGIN</a>
+			</div>
+
+
+		</div>
+	</div>
+		<!-- Login section -->
+        <section class="container forms">
+		
+            <div class="form login">
+			
+                <div class="form-content">
+				
+                    <header>Login</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Password" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="form-link">
+                            <a href="#" class="forgot-pass">Forgot password?</a>
+                        </div>
+
+						<tr>
+							<td colspan="2" style="text-align:right;">
+								<input type="submit" value="Submit">
+								<input type="reset" value="Clear">
+								<input type="button" value="Cancel">
+							</td>
+						</tr>
+
+                        <div class="field button-field">
+						
+                            <button>Login</button>
+
+                        </div>
+						
+                    </form>
+					<!-- when click this link it will go to login page and vice versa -->
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="signup.html" ></i> SIGN UP</a></span>
+                    </div>
+                </div>
+
+            </div>   
+			
+			<footer style="color:black;">
+					<p>&copy; 2023 NorAlia Izzati. Disclaimer & Copyright.</p>
+			</footer>
+        </section>
+    </body>
+</html>
+
+
+
+
